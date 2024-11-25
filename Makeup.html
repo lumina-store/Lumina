@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make-Up | Lumina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <!--Navigation-->
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Lumina Logo"></a>
+        </div>
+        <div class="categories-head">
+            <a href="Electronics.html">Electronics</a>
+            <a href="Makeup.html">Make-Up</a>
+            <a href="Decor.html">Decor</a>
+        </div>            <div class="header-icons">
+
+            <a href="CustomerPage.html" class="oval-button">Customer</a>
+            <a href="SellerPage.html" class="oval-button">Seller</a>
+            <a href="index.html"><img src="images/home.png" class="icon" alt="Home"></a>
+            <a href="CartPage.html" id="my-cart">
+                <img src="images/cart.png" class="icon" alt="Cart">
+            </a>
+            <div class="header-icons">
+            </nav>
+    <!--Breadcrumbs-->
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <a href="makeup.html">Make-up</a>
+    </div>
+</header>
+<main class="categ">
+    <div class="sort-container">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <optgroup label="Price">
+                <option value="low-to-high">Price: Low to High</option>
+                <option value="high-to-low">Price: High to Low</option>
+            </optgroup>
+            <optgroup label="Name">
+                <option value="A-Z">Name: A-Z</option>
+                <option value="Z-A">Name: Z-A</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- Product List -->
+    <ul class="itemList" id="itemList">
+        <!-- Product 1 -->
+        <li class="item" id="item11">
+            <img src="images/s2802163-main-zoom.webp" alt="Lip balm">
+            <h3>Summer Fridays Lip Butter Balm for Hydration & Shine</h3>
+            <div class="price">$24.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item11">-</button>
+                <input type="text" value="1" id="item11-quantity" class="quantity-input">
+                <button class="increase" data-id="item11">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item11">Add to Cart</button>
+            <p>Provides intense hydration with a glossy finish for soft, supple lips.</p>
+        </li>
+
+        <!-- Product 2 -->
+        <li class="item" id="item12">
+            <img src="images/s2712867-main-zoom.webp" alt="Liquid Blush">
+            <h3>Rare Beauty by Selena Gomez Mini Soft Pinch Liquid Blush</h3>
+            <div class="price">$14.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item12">-</button>
+                <input type="text" value="1" id="item12-quantity" class="quantity-input">
+                <button class="increase" data-id="item12">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item12">Add to Cart</button>
+            <p>Long-lasting liquid blush that gives a soft, natural flush to the cheeks.</p>
+        </li>
+
+        <!-- Product 3 -->
+        <li class="item" id="item13">
+            <img src="images/s2742567-main-zoom.webp" alt="Blush Duo">
+            <h3>Major Headlines Double-Take Crème & Powder Blush Duo</h3>
+            <div class="price">$38.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item13">-</button>
+                <input type="text" value="1" id="item13-quantity" class="quantity-input">
+                <button class="increase" data-id="item13">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item13">Add to Cart</button>
+            <p>A versatile blush duo that includes both cream and powder for customizable color.</p>
+        </li>
+
+        <!-- Product 4 -->
+        <li class="item" id="item14">
+            <img src="images/s2518934-main-zoom.webp" alt="Bronzer Stick">
+            <h3>Warm Wishes Effortless Cream Bronzer Stick</h3>
+            <div class="price">$26.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item14">-</button>
+                <input type="text" value="1" id="item14-quantity" class="quantity-input">
+                <button class="increase" data-id="item14">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item14">Add to Cart</button>
+            <p>A cream bronzer stick that blends easily for a natural sun-kissed glow.</p>
+        </li>
+
+        <!-- Product 5 -->
+        <li class="item" id="item15">
+            <img src="images/s2245363-main-zoom.webp" alt="Concealer">
+            <h3>Mini Radiant Creamy Concealer with Medium Coverage</h3>
+            <div class="price">$15.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item15">-</button>
+                <input type="text" value="1" id="item15-quantity" class="quantity-input">
+                <button class="increase" data-id="item15">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item15">Add to Cart</button>
+            <p>Provides creamy, medium coverage to conceal imperfections and brighten the under-eye area.</p>
+        </li>
+
+        <!-- Product 6 -->
+        <li class="item" id="item16">
+            <img src="images/s2739415-main-zoom.webp" alt="Setting Powder">
+            <h3>Easy Bake Loose Baking & Setting Powder</h3>
+            <div class="price">$38.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item16">-</button>
+                <input type="text" value="1" id="item16-quantity" class="quantity-input">
+                <button class="increase" data-id="item16">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item16">Add to Cart</button>
+            <p>Translucent setting powder that helps to set makeup for a flawless finish.</p>
+        </li>
+
+        <!-- Product 7 -->
+        <li class="item" id="item17">
+            <img src="images/s2368439-main-zoom.webp" alt="Setting Spray">
+            <h3>Airbrush Flawless Waterproof Setting Spray</h3>
+            <div class="price">$38.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item17">-</button>
+                <input type="text" value="1" id="item17-quantity" class="quantity-input">
+                <button class="increase" data-id="item17">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item17">Add to Cart</button>
+            <p>Weightless setting spray that locks in makeup and gives a long-lasting finish.</p>
+        </li>
+
+        <!-- Product 8 -->
+        <li class="item" id="item18">
+            <img src="images/s2753788-main-zoom.webp" alt="Liquid Bronzer">
+            <h3>Dew Bronze Soft-Focus Sculpting Liquid Bronzer</h3>
+            <div class="price">$25.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item18">-</button>
+                <input type="text" value="1" id="item18-quantity" class="quantity-input">
+                <button class="increase" data-id="item18">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item18">Add to Cart</button>
+            <p>A liquid bronzer that adds a soft-focus effect and natural warmth to the skin.</p>
+        </li>
+
+        <!-- Product 9 -->
+        <li class="item" id="item19">
+            <img src="images/s2816551-main-zoom.webp" alt="Highlighter">
+            <h3>Gilded Glow Highlighter Palette</h3>
+            <div class="price">$34.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item19">-</button>
+                <input type="text" value="1" id="item19-quantity" class="quantity-input">
+                <button class="increase" data-id="item19">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item19">Add to Cart</button>
+            <p>A highlighter palette with a range of shades for a radiant, glowing complexion.</p>
+        </li>
+
+        <!-- Product 10 -->
+        <li class="item" id="item20">
+   <img src="images/s2801652-main-zoom.webp" alt="Face Palette">
+            <h3>DIOR BACKSTAGE Glow Face Palette</h3>
+            <div class="price">$49.00</div>
+            <div class="quantity">
+                <button class="decrease" data-id="item20">-</button>
+                <input type="text" value="1" id="item20-quantity" class="quantity-input">
+                <button class="increase" data-id="item20">+</button>
+            </div>
+            <button class="add-to-cart" data-id="item20">Add to Cart</button>
+            <p>Glow face palette with highlighter, bronzer, and blush for a radiant complexion.</p>
+        </li>
+    </ul>
+</main>
+<footer>
+    <div class="contact-info">
+        <p>Contact Us</p>
+        <p><img src="images/instagram.png" alt="Instagram">@Lumina</p>
+        <p><img src="images/x.png" alt="X">@Lumina</p>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 IT312</p>
+    </div>
+</footer>
+
+
+    <script src="Scripts/CategoriesScript.js"></script>
+
+
+</body>
+</html>
+
+

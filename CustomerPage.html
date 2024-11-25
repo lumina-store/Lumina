@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Lumina Logo"></a>
+            </div>
+            <div class="categories-head">
+                <a href="Electronics.html">Electronics</a>
+                <a href="Makeup.html">Make-Up</a>
+                <a href="Decor.html">Decor</a>
+            </div>             <div class="header-icons">
+
+                <a href="CustomerPage.html" class="oval-button">Customer</a>
+                <a href="SellerPage.html" class="oval-button">Seller</a>
+                <a href="index.html"><img src="images/home.png" class="icon" alt="Home"></a>
+                <a href="CartPage.html" id="my-cart"><img src="images/cart.png" class="icon" alt="Cart"></a>
+       </div> </nav>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; <a href="CustomerPage.html">Customer</a>
+        </div>
+    </header>
+
+    <main id="CustomerMain">
+        <!-- User Information -->
+        <h1>Hello, Customer!</h1> 
+
+        <div class="profile">
+            <div class="user-info">
+                <div class="UserIcon"> 
+                    <img src="images/avatar.png" alt="avatar" class="avatar">
+                </div>
+                <div class="UserContact">
+                    <p>Jane Smith</p>
+                    <p>Jane1@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Customer Options -->
+        <section class="customer-options">
+            <div id="Order-History">
+                <a href="OrderPage.html"><h2>Order History</h2></a>
+            </div>
+            <div id="write-review">
+                <a href="ReviewPage.html"><h2>Write a Review</h2></a>
+            </div>
+            <div id="customer-cart">
+                <a href="CartPage.html"><h2>Your Cart</h2></a>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Recommendations -->
+        <section class="recommendations">
+            <h2>Recommended for you</h2>
+            <div class="Recommended-container">
+                <!-- Recommended Item 1 -->
+                <div class="recommended-item">
+                    <img src="images/Recommended1.png" alt="lip balm"> 
+                    <div class="item-details">
+                        <span class="item-name">Summer Fridays<br>lip balm</span>
+                        <span class="item-price" data-price="10">10$</span>
+						<p style="display:none;">Provides intense hydration with a glossy finish for soft, supple lips.</p>
+                    </div>
+                    <div class="quantity"> 
+                        <button class="addToCart">Add to cart</button>
+                        <label for="quantity-lipbalm" class="hide-label">Quantity</label>
+				<button class="quantity-btn minus">-</button>
+                <input type="text" value="1" min="1" id="quantity-lipbalm" class="quantity-input">
+                <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+
+                <!-- Recommended Item 2 -->
+                <div class="recommended-item">
+                    <img src="images/DecorCatg.png" alt="cactus"> 
+                    <div class="item-details">
+                        <span class="item-name">Potted cactus</span>
+						<p style="display:none;">Stylish potted cactus, perfect for adding greenery to any<br> space with minimal upkeep.</p>
+                        <span class="item-price" data-price="7">7$</span>
+                    </div>
+                    <div class="quantity">						
+                        <button class="addToCart">Add to cart</button>
+                        <label for="quantity-cactus" class="hide-label">Quantity</label>
+				<button class="quantity-btn minus">-</button>
+                <input type="text" value="1" min="1" id="quantity-cactus" class="quantity-input">
+                <button class="quantity-btn plus">+</button>                    </div>
+                </div>
+                
+                <!-- Recommended Item 3 -->
+                <div class="recommended-item">
+                    <img src="images/Recommended3.png" alt="eye shadow"> 
+                    <div class="item-details">
+                        <span class="item-name">Eyeshadow Palette</span>
+                        <span class="item-price" data-price="20">20$</span>
+						<p style="display:none;">5-shade nude mini palette for effortless, everyday looks.</p>
+                    </div>
+                    <div class="quantity">
+                        <button class="addToCart">Add to cart</button>
+                        <label for="quantity-eyeshadow" class="hide-label">Quantity</label>
+				<button class="quantity-btn minus">-</button>
+                <input type="text" value="1" min="1" id="quantity-eyeshadow" class="quantity-input">
+                <button class="quantity-btn plus">+</button>                    </div>
+                </div>
+        
+                <!-- Recommended Item 4 -->
+                <div class="recommended-item">
+                    <img src="images/offer6.png" alt="Webcam"> 
+                    <div class="item-details">
+                        <span class="item-name">Webcam</span>
+                        <span class="item-price" data-price="40">40$</span>
+						<p style="display:none;">HD webcam with clear audio and tripod for easy setup—ideal for video calls and streaming.</p>
+                    </div>
+                    <div class="quantity">
+                        <button class="addToCart">Add to cart</button>
+                        <label for="quantity-webcam" class="hide-label">Quantity</label>
+				<button class="quantity-btn minus">-</button>
+                <input type="text" value="1" min="1" id="quantity-webcam" class="quantity-input">
+                <button class="quantity-btn plus">+</button>                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact Us</p>
+            <p><img src="images/instagram.png" alt="Instagram">@Lumina</p>
+            <p><img src="images/x.png" alt="X">@Lumina</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 IT312</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/CustomerScript.js"></script>
+</body>
+</html>
+
+
+

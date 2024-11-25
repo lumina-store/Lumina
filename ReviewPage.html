@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form | Lumina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Header -->
+<header>
+	<nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Lumina Logo"></a>
+        </div>
+        <div class="categories-head">
+            <a href="Electronics.html">Electronics</a>
+            <a href="Makeup.html">Make-up</a>
+            <a href="Decor.html">Decor</a>
+        </div>            <div class="header-icons">
+
+            <a href="CustomerPage.html" class="oval-button">Customer</a>
+			<a href="SellerPage.html" class="oval-button">Seller</a>
+            <a href="index.html"><img src="images/home.png" class="icon" alt="Home"></a>
+                <a href="CartPage.html" id="my-cart"><img src="images/cart.png" class="icon" alt="Cart"></a>
+	</div></nav>
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <a href="CustomerPage.html">Customer</a> &gt; <a class="thisPage" href="ReviewPage.html">Review</a>
+    </div>
+ </header>
+<main class="review">
+    <h1>Review Form</h1>
+    <form id="review-form" class="review-form">
+        <div id="review-order-select">
+            <label for="list-order-rev" class="hide-label"> Select Order </label>
+            <select name="order-list" id="list-order-rev">
+                <option value="" disabled selected>Order list</option>
+                <option value="1">Order #123-456-789</option>
+                <option value="2">Order #987-654-321</option>
+                <option value="3">Order #112-334-556</option>
+            </select>
+        </div>
+        <fieldset> 
+            <div class="review-form-row">
+                <label for="product-select" class="hide-label"> Select Product </label>
+				<select name="product" id="product-select">
+                    <option value="1">Product #1</option>
+                    <option value="2">Product #2</option>
+                </select>
+            </div>
+            <div class="review-form-row share">
+			 <div id="opinion"> 
+				<label for="review-text">Share your opinion:</label><br>
+                <textarea name="review-text" id="review-text" cols="1" rows="1"></textarea>
+			 </div>
+             <div class="upload-container">
+                    <label for="review-upload" class="upload-box">
+                        <span>+</span>
+							Upload Photo
+                    <input type="file" id="review-upload" name="offer_image" style="display: none;">
+					</label>
+             </div>
+            </div>
+            <div class="review-form-row rating">
+                <label>Rate us:</label>
+                <div class="rating-stars">
+                    <button type="button" onclick="setRating(1)"><img src="images/star.png" alt="rating star 1"></button>
+                    <button type="button" onclick="setRating(2)"><img src="images/star.png" alt="rating star 2"></button>
+                    <button type="button" onclick="setRating(3)"><img src="images/star.png" alt="rating star 3"></button>
+                    <button type="button" onclick="setRating(4)"><img src="images/star.png" alt="rating star 4"></button>
+                    <button type="button" onclick="setRating(5)"><img src="images/star.png" alt="rating star 5"></button>
+                </div>
+                <input type="hidden" id="rating" name="rating" value="">
+            </div>
+            <input type="submit" value="Submit" id="review-submit">
+        </fieldset>
+    </form>
+</main>
+   <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Contact Us</p>
+            <p><img src="images/instagram.png" alt="instagram">@Lumina</p>
+            <p><img src="images/x.png" alt="x">@Lumina</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 IT312</p>
+        </div>
+    </footer>
+   <script src="Scripts/ReviewScript.js"></script>
+
+</body>
+</html>
+
