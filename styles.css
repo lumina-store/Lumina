@@ -1520,7 +1520,7 @@ body.dark-mode .review .rating-stars button {
     
     footer .contact-info {
         display: flex;
-        gap: 1em;
+        flex-direction: column;
         align-items: center;
     }
     
