@@ -1512,7 +1512,7 @@ body.dark-mode .review .rating-stars button {
     footer {
         background-color: #323232;
         color: #F5F5F5;
-        padding: 1em;
+        padding: 0.6em;
         display: flex;
         justify-content: space-between;
         align-items: center;
